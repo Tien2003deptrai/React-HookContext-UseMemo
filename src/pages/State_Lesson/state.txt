@@ -1,0 +1,9 @@
+state : object lưu trữ giá trị của các thuộc tính trong components (3 loại)
+        khi mà state thay đổi - components sẽ được render (return)
+
+Khái niệm : state: chỉ sử dụng trong components (private)
+
+private string name = "Duc"
+
+
+-- sự khác biệt của state và props

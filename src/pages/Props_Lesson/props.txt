@@ -1,0 +1,13 @@
+props: 
+
+khái niệm :
+- public : công khai
+
+Props là tham số được chuyển qua lại giữa các 
+React component và được truyền qua 
+các component với cú pháp tương tự HTML attributes.
+
+
+hiển thị danh sách sản phẩm
+gồm : name, giá, description 
+dùng state và props
