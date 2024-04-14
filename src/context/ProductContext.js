@@ -23,11 +23,6 @@ export const ProductsContextProvider = ({ children }) => {
             const res = await getAllProducts();
             setProducts(res.data);
         })()
-        // const fetchApiAllProduct = async () => {
-        //     const res = await getAllProducts();
-        //     setProducts(res.data);
-        // }
-        // fetchApiAllProduct();
     }, [])
 
     // trả về 

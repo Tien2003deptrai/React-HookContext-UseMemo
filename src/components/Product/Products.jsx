@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo } from 'react';
 // hooks
 import ListProduct from './ListProduct';
 // 
@@ -9,6 +9,10 @@ import { useProductContext } from '../../context/ProductContext';
 const Products = () => {
     const { theme } = useThemeContext();
     const { products } = useProductContext();
+
+    // take note : lưu trữ (giá trị để tính toán) - tối ưu hoá hiệu xuất tránh tính toán các giá trị không cần thiết
+    // arr[i]
+    // const totalCost1 = products.reduce((sum, product) => sum + product.price, 0);
 
     const memoizedValue = useMemo(() => {
         const totalCost = products.reduce((sum, product) => sum + product.price, 0);
